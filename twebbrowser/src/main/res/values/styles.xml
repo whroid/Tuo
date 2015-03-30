@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TWebProgressTransparentHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/tweb_progress_transparent_horizontal</item>
+        <item name="android:minHeight">@dimen/tweb_horizontal_progress_height</item>
+    </style>
+</resources>
