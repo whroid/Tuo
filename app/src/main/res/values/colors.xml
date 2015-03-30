@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg_color">#f5f5eb</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+      <color name="transprant">#00000000</color>
+      
+      <color name="actionbar_devider_color">#ff212324</color>
+    <color name="actionbar_selector_color">#4d000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="action_bar_tittle_color">@color/white</color>
+    <color name="action_bar_color">#404040</color>
+    <color name="hint_text_color">#ff999999</color>
+    
+    
+      <color name="listview_line_color">#e0e0e0</color>
+    <color name="listview_line_bold_color">#bebebe</color>
+    <color name="btn_blue_color_press">#8fdfcc</color>
+    <color name="btn_blue_color_normal">#44caaa</color>
+</resources>

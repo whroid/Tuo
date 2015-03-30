@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transprant"
+            android:padding="3dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:hint="日记标题"
+            android:textColor="@color/black" />
+
+        <View style="@style/listview_divier_line" />
+
+        <EditText
+              android:padding="3dip"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            android:id="@+id/new_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transprant"
+            android:gravity="top"
+            android:hint="日记内容"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/new_save"
+            style="@style/common_btn_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>
