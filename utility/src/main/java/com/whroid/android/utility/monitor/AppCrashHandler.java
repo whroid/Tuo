@@ -53,7 +53,7 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 
         if(MobileUtils.isHasSdcard())
         {
-            app_crash_dir = Environment.DIRECTORY_DOCUMENTS;
+            app_crash_dir = Environment.getExternalStorageDirectory().getAbsolutePath();
         }
 	}
 
