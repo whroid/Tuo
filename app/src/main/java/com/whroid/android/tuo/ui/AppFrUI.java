@@ -38,7 +38,7 @@ public class AppFrUI extends TFragment {
 
 	@Override
 	public void initData() {
-        SApp[] items = new SApp[]{SApp.NOTE,SApp.TWEB};
+        SApp[] items = new SApp[]{SApp.NOTE,SApp.TWEB,SApp.SAMPLE};
 		ArrayAdapter<SApp> adapter = new ArrayAdapter<SApp>(getActivity(), android.R.layout.simple_list_item_1, android.R.id.text1, items);
 		listview.setAdapter(adapter);
 		listview.setOnItemClickListener(new OnItemClickListener() {

@@ -26,4 +26,5 @@ dependencies {
     compile project(':utility')
     compile project(':note')
     compile project(':twebbrowser')
+    compile project(':sample')
 }

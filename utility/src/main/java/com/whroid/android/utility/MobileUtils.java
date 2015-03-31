@@ -8,6 +8,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Environment;
 
 /**
  * 
@@ -89,4 +90,14 @@ public class MobileUtils {
 			return "";
 		}
 	}
+
+    /**
+     * 是否有内存卡
+     * @return
+     */
+    public static boolean isHasSdcard()
+    {
+        return Environment.getExternalStorageState().equals(
+                Environment.MEDIA_MOUNTED);
+    }
 }

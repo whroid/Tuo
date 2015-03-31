@@ -3,6 +3,7 @@ package com.whroid.android.twebbrowser;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Handler;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,7 +22,8 @@ public class TwebBrowserUI extends ActionBarActivity {
 
     WebView webview;
     ProgressBar progressbar;
-   Handler handler = new Handler();
+    Handler handler = new Handler();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,24 +32,33 @@ public class TwebBrowserUI extends ActionBarActivity {
         initView();
         initData();
     }
-     private void init() {
 
-     }
+    private void init() {
 
-     private void initView() {
-     webview = (WebView) findViewById(R.id.webview);
-     progressbar = (ProgressBar) findViewById(R.id.progressbar);
-         initWebView();
-     }
+    }
 
-     private void initData() {
-         Uri data = getIntent().getData();
-         String str = data.getPath();
-         if(data != null)
-             webview.loadUrl(data.toString());
-     }
-    private void initWebView()
-    {
+    private void initView() {
+        webview = (WebView) findViewById(R.id.webview);
+        progressbar = (ProgressBar) findViewById(R.id.progressbar);
+        initWebView();
+        ActionBar actionbar = getSupportActionBar();
+        actionbar.setDisplayHomeAsUpEnabled(true);
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return super.onSupportNavigateUp();
+    }
+
+    private void initData() {
+        Uri data = getIntent().getData();
+        if (data != null)
+            webview.loadUrl(data.toString());
+    }
+
+    private void initWebView() {
         WebSettings setting = webview.getSettings();
         setting.setJavaScriptEnabled(true);
         setting.setJavaScriptCanOpenWindowsAutomatically(true);

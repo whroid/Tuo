@@ -160,7 +160,7 @@ public class NoteMainUI extends TActivity {
 	}
 	@Override
 	public boolean onSupportNavigateUp() {
-		return super.onSupportNavigateUp();
+		return true;
 	}
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
