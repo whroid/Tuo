@@ -5,10 +5,6 @@
     <application
         android:allowBackup="true"
         android:label="@string/app_name" >
-        <activity
-            android:name=".navigation.DrawerLayoutActivity"
-            android:label="@string/title_activity_drawer_layout" >
-        </activity>
     </application>
 
 </manifest>

@@ -54,10 +54,6 @@
             android:name="com.whroid.android.sample.SampleActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity
-            android:name="com.whroid.android.sample.navigation.DrawerLayoutActivity"
-            android:label="@string/title_activity_drawer_layout" >
-        </activity>
         <!-- sample end -->
     </application>
 
