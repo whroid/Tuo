@@ -1,1 +1,2 @@
-include ':app', ':base', ':utility', ':note', ':note', ':twebbrowser', ':sample', ':'
+include ':app', ':base', ':utility', ':note', ':note', ':twebbrowser', ':sample', ':foundation', ':'
+include ':3share'

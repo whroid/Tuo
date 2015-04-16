@@ -93,6 +93,8 @@
     <orderEntry type="module" module-name="twebbrowser" exported="" />
     <orderEntry type="module" module-name="base" exported="" />
     <orderEntry type="module" module-name="utility" exported="" />
+    <orderEntry type="module" module-name="foundation" exported="" />
+    <orderEntry type="module" module-name="3share" exported="" />
   </component>
 </module>
 

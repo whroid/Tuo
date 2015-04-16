@@ -11,7 +11,7 @@ public class TFileManager {
     /**
      * 根目录
      */
-    public final static String ROOT_DIR = Environment.getExternalStorageDirectory().getAbsolutePath()+"/tuo";
+    public final static String ROOT_DIR = Environment.getExternalStorageDirectory().getAbsolutePath()+"/tuo/";
     /**
      * 奔溃日志目录
      */

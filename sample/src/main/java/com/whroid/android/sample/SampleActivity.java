@@ -1,5 +1,8 @@
 package com.whroid.android.sample;
 
+import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ListFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -10,6 +13,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.whroid.android.sample.navigation.DrawerLayoutActivity;
 
 
 public class SampleActivity extends ActionBarActivity {
@@ -51,8 +59,9 @@ public class SampleActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
+    public static class PlaceholderFragment extends ListFragment {
 
+        ListView listview;
         public PlaceholderFragment() {
         }
 
@@ -61,6 +70,29 @@ public class SampleActivity extends ActionBarActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_sample, container, false);
             return rootView;
+        }
+
+        @Override
+        public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+            super.onActivityCreated(savedInstanceState);
+            listview = getListView();
+            String[] items = new String[]{"navigation(导航)"};
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, android.R.id.text1, items);
+            listview.setAdapter(adapter);
+            listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int position, long id) {
+                    String app = (String)parent.getAdapter().getItem(position);
+                    switch(position)
+                    {
+                        case 0:
+                            startActivity(new Intent(getActivity(), DrawerLayoutActivity.class));
+                            break;
+                    }
+                }
+            });
         }
     }
 }

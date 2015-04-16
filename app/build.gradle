@@ -1,21 +1,31 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        whroid {
+            keyAlias 'whroid'
+            keyPassword 'wushan'
+            storeFile file('E:/学习盘/keystore/whroid.android.keystore')
+            storePassword 'wushan'
+        }
+    }
     compileSdkVersion 22
-    buildToolsVersion "20.0.0"
-
+    buildToolsVersion '21.1.1'
     defaultConfig {
         applicationId "com.whroid.android.tuo"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.whroid
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -27,4 +37,6 @@ dependencies {
     compile project(':note')
     compile project(':twebbrowser')
     compile project(':sample')
+    compile project(':3share')
+    compile project(':foundation')
 }

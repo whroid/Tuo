@@ -14,7 +14,14 @@ public class TAppController {
         }else if(sapp == SApp.TWEB)
         {
             tapp = new TWebApp();
-        }else {
+        }else if(sapp == SApp.SAMPLE) {
+            tapp = new SampleApp();
+        }else if(sapp == SApp.SHARE){
+            tapp = new ShareApp();
+        }else if(sapp == SApp.FOUNDATION){
+            tapp = new FoundationApp();
+        }
+        else {
             tapp = new EmptyApp();
         }
         return tapp;

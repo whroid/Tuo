@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/3share/3share.iml" filepath="$PROJECT_DIR$/3share/3share.iml" />
       <module fileurl="file://$PROJECT_DIR$/Tuo.iml" filepath="$PROJECT_DIR$/Tuo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foundation/foundation.iml" filepath="$PROJECT_DIR$/foundation/foundation.iml" />
       <module fileurl="file://$PROJECT_DIR$/note/note.iml" filepath="$PROJECT_DIR$/note/note.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/twebbrowser/twebbrowser.iml" filepath="$PROJECT_DIR$/twebbrowser/twebbrowser.iml" />

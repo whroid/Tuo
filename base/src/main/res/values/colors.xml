@@ -1,0 +1,6 @@
+<resources>
+    <color name="app_bg_color">#f5f5eb</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transprant">#00000000</color>
+</resources>
