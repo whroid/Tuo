@@ -5,12 +5,12 @@ android {
         whroid {
             keyAlias 'whroid'
             keyPassword 'wushan'
-            storeFile file('E:/学习盘/keystore/whroid.android.keystore')
+            storeFile file('/Users/whroid/Documents/keystoreAndProvision/android/whroid.android.keystore')
             storePassword 'wushan'
         }
     }
     compileSdkVersion 22
-    buildToolsVersion '21.1.1'
+    buildToolsVersion '22.0.1'
     defaultConfig {
         applicationId "com.whroid.android.tuo"
         minSdkVersion 15
