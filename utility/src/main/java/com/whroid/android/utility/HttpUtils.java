@@ -29,7 +29,7 @@ public class HttpUtils {
 	public  static void getIp() {
 		java.net.InetAddress x;
 		try {
-			x = java.net.InetAddress.getByName("gateway.myctu.cn");
+			x = java.net.InetAddress.getByName("www.baidu.com");
 			String ip = x.getHostAddress();// 得到字符串形式的ip地址
 			System.out.println(ip);
 		} catch (UnknownHostException e) {
