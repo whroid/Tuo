@@ -16,7 +16,7 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 
 import com.whroid.android.utility.HttpUtils;
-import com.whroid.android.utility.InmovationLogger;
+import com.whroid.android.utility.WLogger;
 import com.whroid.android.utility.LogUtil;
 
 import android.graphics.Bitmap;
@@ -27,7 +27,7 @@ public class ImageLoader {
 
 	public static final String TAG = "ImageLoader";
 
-	static InmovationLogger mLogger = InmovationLogger.getLogger(TAG);
+	static WLogger mLogger = WLogger.getLogger(TAG);
 	private static final int REQUEST_TIMEOUT = 30 * 1000;
 	private static final int SO_TIMEOUT = 30 * 1000;
 

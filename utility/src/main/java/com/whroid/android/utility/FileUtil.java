@@ -16,7 +16,7 @@ import android.util.Log;
  * @create 2014-3-25
  */
 public class FileUtil {
-	static InmovationLogger logger = InmovationLogger.getLogger(FileUtil.class
+	static WLogger logger = WLogger.getLogger(FileUtil.class
 			.getSimpleName());
 	public static String TAG = FileUtil.class.getSimpleName();
 

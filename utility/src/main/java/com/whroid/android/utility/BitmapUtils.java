@@ -7,7 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-import com.whroid.android.utility.InmovationLogger;
+import com.whroid.android.utility.WLogger;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -28,7 +28,7 @@ import android.view.View.MeasureSpec;
 public class BitmapUtils {
 
 	public static final String TAG = "BitmapUtils";
-	static InmovationLogger inmovationLogger = InmovationLogger.getLogger(TAG);
+	static WLogger WLogger = WLogger.getLogger(TAG);
 
 	/**
 	 * 获取图片字节数组。通过本地图片路径获取图片，并且现在图片的最大宽度，将其转成字节数组
@@ -98,10 +98,10 @@ public class BitmapUtils {
 			is.close();
 			return bitmap;
 		} catch (OutOfMemoryError ex) {
-			inmovationLogger.e("获取图片内存溢出", ex);
+			WLogger.e("获取图片内存溢出", ex);
 		} catch (Exception e) {
 			e.printStackTrace();
-			inmovationLogger.e("获取图片内存溢出", e);
+			WLogger.e("获取图片内存溢出", e);
 		}
 		return null;
 	}
@@ -140,9 +140,9 @@ public class BitmapUtils {
 			is.close();
 			return bitmap;
 		} catch (OutOfMemoryError ex) {
-			inmovationLogger.e("获取图片内存溢出", ex);
+			WLogger.e("获取图片内存溢出", ex);
 		} catch (Exception e) {
-			inmovationLogger.e("获取图片错误", e);
+			WLogger.e("获取图片错误", e);
 		}
 		return null;
 	}
@@ -196,7 +196,7 @@ public class BitmapUtils {
 			fis.close();
 			return b;
 		} catch (OutOfMemoryError ex) {
-			inmovationLogger.e("获取图片内存溢出", ex);
+			WLogger.e("获取图片内存溢出", ex);
 			//throw new Exception("获取图片内存溢出", ex);
 			System.gc();
 		} 

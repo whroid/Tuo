@@ -10,18 +10,18 @@ import android.util.Log;
  * @author whroid
  * @create 2014-3-25
  */
-public class InmovationLogger {
+public class WLogger {
 	
-	private final static String tagBase = "[inmovation]";
+	private final static String tagBase = "[tuo]";
 	public static int logLevel = Log.VERBOSE;
 	private static boolean logFlag = true;
 	String tag = tagBase;
 
-	public static InmovationLogger getLogger(String tag)
+	public static WLogger getLogger(String tag)
 	{
-		return new InmovationLogger(tag);
+		return new WLogger(tag);
 	}
-	private InmovationLogger(String tag) {
+	private WLogger(String tag) {
 		this.tag = tagBase+tag;
 	}
 
